@@ -23,31 +23,6 @@ sub _build_mail {
 }
 
 sub dispatch {
-    my ($self) = @_;package Robomari;
-
-use Moose;
-
-has date => (
-    is => 'ro',
-    isa => 'Robomari::Date',
-    lazy_build => 1,
-);
-
-has mail => (
-    is => 'ro',
-    isa => 'Robomari::Mail',
-    lazy_build => 1,
-);
-
-sub _build_date {
-    Robomari::Date->new;
-}
-
-sub _build_mail {
-    Robomari::Mail->new(shift->date);
-}
-
-sub dispatch {
     my ($self) = @_;
     if ($self->date->is_announce) {
         #Sent out a fortnight before the social
