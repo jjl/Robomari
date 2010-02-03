@@ -4,6 +4,8 @@ Subject: London.pm {$social_date->month_name} Social, Gunmakers, EC1R 5ET
 
 The gunmakers, it's a lovely pub. Let's go there again, and indeed every month.
 
+{$social_date->year}-{$social_date->month}-{$social_date->day}, 6pm til closing
+
 Info: http://london.randomness.org.uk/wiki.cgi?Gunmakers,_EC1R_5ET
 
 Beerfully yours,
